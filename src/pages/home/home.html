@@ -1,14 +1,37 @@
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title>ตั้งค่าสถานที่ส่งของ</ion-title>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+<ion-content>
+  <ion-row id="pictureMap">
+    <img src="../../assets/imgs/map.PNG">
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      ข้อมูล
+    </ion-col>
+  </ion-row>
+  <ion-row>
+      <div id="detail">
+        <div>
+          ชื่อ: {{firstName}}&nbsp;&nbsp;{{lastName}}
+        </div>
+        <div>
+          ที่อยู่: {{address}}
+        </div>
+        <div>
+          <button ion-button id="moreDetail">ข้อมูลเพิ่มเติม</button>
+        </div>
+      </div>
+  </ion-row>
 </ion-content>
+<ion-footer style="background-color: #C31432;" (click)="goToHistory()">
+  <ion-toolbar style="background-color: #C31432;">
+    <ion-title style="background-color: #C31432;">เริ่มส่งของ</ion-title>
+  </ion-toolbar>
+</ion-footer>

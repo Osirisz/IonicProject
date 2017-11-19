@@ -1,0 +1,47 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <div>
+    <ion-row>
+      <h2>
+        ข้อมูล
+      </h2>
+    </ion-row>
+    <ion-row>
+      <ion-label>ชื่อ: {{firstName}}</ion-label>
+      <ion-label>นามสกุล: {{lastName}}</ion-label>
+    </ion-row>
+    <ion-row>
+      <div>
+        ที่อยู่: {{address}}
+      </div>
+    </ion-row>
+    <ion-row>
+      <ion-label>เบอร์: {{telephone}}</ion-label>
+    </ion-row>
+    <ion-row>
+      <h2>รายละเอียดของ</h2>
+    </ion-row>
+    <ion-row>
+      <ion-label>น้ำหนัก: {{weight}} kg.</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label>ความสูง: {{height}} cm.</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label>ความกว้าง: {{width}} cm.</ion-label>
+    </ion-row>
+    <ion-row>
+      <button ion-button id="map" (click)="goToHome()">Map</button>
+    </ion-row>
+    <ion-row>
+      <button ion-button color="secondary" id="result" (click)="presentConfirm()">Finish</button>
+      <button ion-button color="danger" id="result" (click)="presentAlert()">Wrong address</button>
+    </ion-row>
+  </div>
+</ion-content>
