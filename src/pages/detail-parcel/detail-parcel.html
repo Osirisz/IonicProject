@@ -1,0 +1,69 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>detailParcel</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-row>
+    <ion-label fixed class='fixedLabel'>
+      ที่อยู่:
+    </ion-label>
+    <textarea name="" id="" cols="50" rows="3"></textarea>
+  </ion-row>
+  <br>
+  <br>
+
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <ion-card-header>
+          <img src="http://via.placeholder.com/50x50">
+        </ion-card-header>
+        <ion-card-content>
+          small
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card>
+        <ion-card-header>
+          <img src="http://via.placeholder.com/50x50">
+        </ion-card-header>
+        <ion-card-content>
+          medium
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <ion-card-header>
+          <img src="http://via.placeholder.com/50x50">
+        </ion-card-header>
+        <ion-card-content>
+          large
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card>
+        <ion-card-header>
+          <img src="http://via.placeholder.com/50x50">
+        </ion-card-header>
+        <ion-card-content>
+          very large
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <button ion-button color="secondary" (click)="presentConfirm()">Confirm</button>
+
+</ion-content>

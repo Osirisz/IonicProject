@@ -1,3 +1,4 @@
+import { DetailUserPage } from './../detail-user/detail-user';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DetailPage } from './../detail/detail';
@@ -21,7 +22,10 @@ export class HistoryPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad HistoryPage');
   }
-  goToDetail(){
+  goToDetail() {
     this.navCtrl.push(DetailPage);
+  }
+  goToDetailUser() {
+    this.navCtrl.push(DetailUserPage);
   }
 }

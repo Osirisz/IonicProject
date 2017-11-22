@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from './../home/home';
 import { RegisterPage } from './../register/register';
+import { LoginUserPage } from './../login-user/login-user';
 /**
  * Generated class for the LoginPage page.
  *
@@ -23,9 +24,12 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
   goToHome() {
-    this.navCtrl.push(HomePage);
+    this.navCtrl.setRoot(HomePage, {}, { animate: true, direction: 'forward' });
   }
-  goToRegister(){
+  goToRegister() {
     this.navCtrl.push(RegisterPage);
+  }
+  goToLogin() {
+    this.navCtrl.setRoot(LoginUserPage, {}, { animate: true, direction: 'forward' });
   }
 }

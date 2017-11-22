@@ -12,6 +12,13 @@ import { HistoryPage } from './../pages/history/history';
 import { DetailPage } from './../pages/detail/detail';
 import { ProfilePage } from './../pages/profile/profile';
 import { EditProfilePage } from './../pages/edit-profile/edit-profile';
+
+import { LoginUserPage } from './../pages/login-user/login-user';
+import { RegisterUserPage } from './../pages/register-user/register-user';
+import { HomeUserPage } from './../pages/home-user/home-user';
+import { DetailParcelPage } from './../pages/detail-parcel/detail-parcel';
+import { DetailUserPage } from './../pages/detail-user/detail-user';
+import { ProfileUserPage } from './../pages/profile-user/profile-user';
 @NgModule({
   declarations: [
     MyApp,
@@ -21,7 +28,13 @@ import { EditProfilePage } from './../pages/edit-profile/edit-profile';
     HistoryPage,
     DetailPage,
     ProfilePage,
-    EditProfilePage
+    EditProfilePage,
+    LoginUserPage,
+    RegisterUserPage,
+    HomeUserPage,
+    DetailParcelPage,
+    DetailUserPage,
+    ProfileUserPage
   ],
   imports: [
     BrowserModule,
@@ -36,12 +49,18 @@ import { EditProfilePage } from './../pages/edit-profile/edit-profile';
     HistoryPage,
     DetailPage,
     ProfilePage,
-    EditProfilePage
+    EditProfilePage,
+    LoginUserPage,
+    RegisterUserPage,
+    HomeUserPage,
+    DetailParcelPage,
+    DetailUserPage,
+    ProfileUserPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
