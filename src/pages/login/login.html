@@ -1,6 +1,6 @@
-<ion-content class="no-scroll" padding id="main-content">
+<ion-content class="no-scroll" padding id="background" scroll="false">
   <ion-row>
-    <img id="logo" src="http://via.placeholder.com/350x150">
+    <img id="logo" src="../../assets/imgs/afterLogo.png">
   </ion-row>
   <ion-row id="login">
     <ion-item>
@@ -11,14 +11,18 @@
       <ion-label>Password: </ion-label>
       <ion-input type="password"></ion-input>
     </ion-item>
-    <ion-row id="loginButton">
-      <button ion-button (click)="goToHome()">Login</button>
+    <ion-row id="optionButton">
+      <button ion-button (click)="goToHome()" style="background-color: #fec00f;">Login</button>
       <button ion-button color="secondary" (click)="goToRegister()">Register</button>
     </ion-row>
-    <ion-row id="buttonConvertLogin">
-      <button ion-button color="light" (click)="goToLogin()" id="buttonConvert">คนรับ</button>
-    </ion-row>
   </ion-row>
-
-
 </ion-content>
+
+<ion-footer style="background-color: #fec00f;">
+  <ion-row text-center>
+    <ion-col>
+      <button ion-button color="light" (click)="goToLogin()" id="buttonSwitch">
+        <ion-icon name="ios-mail"></ion-icon>&nbsp;Switch to receiver</button>
+    </ion-col>
+  </ion-row>
+</ion-footer>
