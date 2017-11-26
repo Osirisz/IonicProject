@@ -1,15 +1,22 @@
 page-register {
   #logo {
     margin-top: 30px;
+    width: 100%;
+    height: 100%;
   }
   #register{
     margin-top: 30px;
+    position: fixed;
+    width: 90%;
   }
   #registerButton{
     button{
-      width: 80px;
+      width: 100px;
     }
     margin: auto;
     margin-top: 30px;
+  }
+  .scroll-content {
+    overflow-y: hidden;
   }
 }

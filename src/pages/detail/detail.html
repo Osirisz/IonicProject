@@ -5,43 +5,38 @@
   </ion-navbar>
 
 </ion-header>
-<ion-content padding>
+<ion-content padding style="background-color: #f5f5f0;">
   <div>
     <ion-row>
-      <h2>
-        ข้อมูล
-      </h2>
+      <ion-label class="content">First name: {{firstName}}</ion-label>
     </ion-row>
     <ion-row>
-      <ion-label>ชื่อ: {{firstName}}</ion-label>
-      <ion-label>นามสกุล: {{lastName}}</ion-label>
+      <ion-label class="content">Last name: {{lastName}}</ion-label>
     </ion-row>
     <ion-row>
-      <div>
-        ที่อยู่: {{address}}
+      <div class="content">
+        Address: {{address}}
       </div>
     </ion-row>
     <ion-row>
-      <ion-label>เบอร์: {{telephone}}</ion-label>
+      <ion-label class="content">Tel.: {{telephone}}</ion-label>
     </ion-row>
     <ion-row>
-      <h2>รายละเอียดของ</h2>
+      <ion-label class="content">Weight: {{weight}} kg.</ion-label>
+    </ion-row>
+    <ion-row text-center>
+      <ion-col>
+        <button ion-button id="map" (click)="goToHome()">Map</button>
+      </ion-col>
     </ion-row>
     <ion-row>
-      <ion-label>น้ำหนัก: {{weight}} kg.</ion-label>
-    </ion-row>
-    <ion-row>
-      <ion-label>ความสูง: {{height}} cm.</ion-label>
-    </ion-row>
-    <ion-row>
-      <ion-label>ความกว้าง: {{width}} cm.</ion-label>
-    </ion-row>
-    <ion-row>
-      <button ion-button id="map" (click)="goToHome()">Map</button>
-    </ion-row>
-    <ion-row>
-      <button ion-button color="secondary" id="result" (click)="presentConfirm()">Finish</button>
-      <button ion-button color="danger" id="result" (click)="presentAlert()">Wrong address</button>
+      <ion-col>
+        <button ion-button color="secondary" class="optionButton" (click)="presentConfirm()">Finish</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="danger" class="optionButton" (click)="presentAlert()">Wrong address</button>
+      </ion-col>
+
     </ion-row>
   </div>
 </ion-content>

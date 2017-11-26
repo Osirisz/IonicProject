@@ -4,7 +4,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>ตั้งค่าสถานที่ส่งของ</ion-title>
+    <ion-title>Location</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,26 +15,22 @@
     <img src="../../assets/imgs/map.PNG">
   </ion-row>
   <ion-row>
-    <ion-col>
-      ข้อมูล
-    </ion-col>
-  </ion-row>
-  <ion-row>
     <div id="detail">
       <div>
-        ชื่อ: {{firstName}}&nbsp;&nbsp;{{lastName}}
+        Name: {{firstName}}&nbsp;&nbsp;{{lastName}}
       </div>
       <div>
-        ที่อยู่: {{address}}
+        Address: {{address}}
       </div>
-      <div>
-        <button ion-button id="moreDetail">ข้อมูลเพิ่มเติม</button>
+      <div id="optionButton">
+        <button ion-button class="button" (click)="goToHistory()">More location </button>
+        <button ion-button color="secondary" class="button" (click)="goToDetail()">Finish </button>
       </div>
     </div>
   </ion-row>
 </ion-content>
-<ion-footer style="background-color: #C31432;" (click)="goToHistory()">
-  <ion-toolbar style="background-color: #C31432;">
-    <ion-title style="background-color: #C31432;">เริ่มส่งของ</ion-title>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="background-color: #1756A7;">Start</ion-title>
   </ion-toolbar>
 </ion-footer>

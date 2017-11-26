@@ -1,9 +1,18 @@
 page-home {
+  ion-title {
+    background-color: #fec00f;
+  }
+  #navSegment {
+    background-color: #fec00f;
+  }
+  .toolbar-background-md {
+    background-color: #fec00f;
+  }
   .scroll-content {
     overflow-y: hidden;
   }
   #pictureMap {
-    height: 300px;
+    height: 280px;
     width: 100%;
   }
   .list {
@@ -15,9 +24,18 @@ page-home {
     margin-left: 10px;
     font-size: 18px;
   }
-  #moreDetail{
-    width: 100px;
-    height: 30px;
+  #optionButton {
+    margin-top: 10px;
+  }
+  .button{
+    width: 150px;
+    height: 40px;
+  }
+  .bar-button-menutoggle-ios{
+    color: black;
+  }
+  .show-back-button {
+    color: black;
   }
   ion-footer {
     text-align: center;
@@ -29,7 +47,7 @@ page-home {
         color: #FFF;
     }
     .toolbar-background {
-        background-color: #C31432;
+      background-color: #1756A7;
     }
   }
 }

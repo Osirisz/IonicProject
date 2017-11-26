@@ -13,8 +13,6 @@ export class DetailPage {
   address = "KMUTT ถนน พุทธบูชา แขวง บางมด เขต ทุ่งครุ กรุงเทพมหานคร";
   telephone = "0888888888";
   weight = 2.5;
-  height = 16;
-  width = 14;
   constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController) {
   }
 
