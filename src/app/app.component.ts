@@ -8,13 +8,12 @@ import { LoginPage } from './../pages/login/login';
 import { HistoryPage } from './../pages/history/history';
 import { ProfilePage } from './../pages/profile/profile';
 
-import { DetailPage } from './../pages/detail/detail';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage: any = DetailPage;
+  rootPage: any = LoginPage;
   pages: Array<{ title: string, component: any }>;
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
